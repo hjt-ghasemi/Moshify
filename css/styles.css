@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
 /* Typography */
 html {
   /* 1 rem = 10px */
@@ -320,4 +325,26 @@ a {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* Cards */
+.card {
+  border-radius: 0.7rem;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card__body,
+.card__header {
+  padding: 2rem 7%;
+}
+
+.card--secondary .card__header {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.card--primary .card__header {
+  background-color: var(--color-primary);
+  color: #fff;
 }
