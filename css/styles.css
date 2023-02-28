@@ -485,3 +485,24 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* Testimonial */
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image > img {
+  border: 5px solid var(--color-secondary);
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+}
