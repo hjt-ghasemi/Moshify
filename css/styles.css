@@ -30,7 +30,7 @@ html {
 body {
   color: var(--color-body);
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 h1,
@@ -220,6 +220,11 @@ a {
 
 .btn--block {
   width: 100%;
+}
+
+.btn--streched {
+  padding-right: 6rem;
+  padding-left: 6rem;
 }
 
 .btn--outline {
@@ -504,5 +509,42 @@ a {
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
+  }
+}
+
+/* Callouts */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  margin-top: 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.callout .btn {
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    text-align: left;
+  }
+
+  .callout.grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout .btn {
+    margin-left: 4rem;
   }
 }
