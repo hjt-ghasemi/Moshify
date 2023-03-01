@@ -586,3 +586,68 @@ a {
   opacity: 1;
   max-height: 100vh;
 }
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  background-color: #000;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__toggler {
+  opacity: 0.4;
+  transition: all 0.2s;
+  border-radius: 6px;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 4px #eee;
+}
+
+.nav__item {
+  padding: 1rem;
+  border-top: 1px solid #222;
+}
+
+.nav__item > a {
+  color: #aaa;
+  transition: color 0.2s;
+}
+
+.nav__item > a:hover {
+  color: #fff;
+}
+
+.nav__logo {
+  transform: translateY(3px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav .collapsible__content {
+    width: auto;
+    display: flex;
+  }
+
+  .nav__item {
+    border-top: 0;
+    margin-right: 2rem;
+  }
+
+  .nav .collapsible__content {
+    opacity: 1;
+    max-height: 100vh;
+  }
+}
