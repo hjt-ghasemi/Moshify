@@ -147,9 +147,15 @@ a {
   padding: 0;
 }
 
+.list--inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .list--inline .list__item {
-  display: inline-block;
-  margin-right: 2rem;
+  margin: 1.5rem;
 }
 
 .list--tick {
@@ -201,10 +207,17 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -242,6 +255,12 @@ a {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 2rem 3rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -271,7 +290,7 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -677,4 +696,16 @@ a {
     text-align: left;
     align-self: center;
   }
+}
+
+/* Block Domain */
+.block-domain__input {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__options {
+  font-weight: 600;
 }
