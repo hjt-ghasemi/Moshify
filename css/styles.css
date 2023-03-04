@@ -535,6 +535,29 @@ a {
   width: 100%;
 }
 
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
+}
+
+.testimonial .media {
+  margin-bottom: 0;
+}
+
+.quote__author {
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+.quote__organization {
+  color: var(--color-headings);
+  opacity: 0.4;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
 @media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
@@ -565,12 +588,16 @@ a {
   justify-self: center;
 }
 
+.callout-signup {
+  transform: translateY(5rem);
+}
+
 @media screen and (min-width: 768px) {
   .callout {
     text-align: left;
   }
 
-  .callout.grid--1x2 {
+  .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
 
@@ -839,6 +866,10 @@ a {
 
   .block-footer .collapsible__toggler {
     display: none;
+  }
+
+  .block-footer .collapsible__heading {
+    font-size: 1.6rem;
   }
 }
 
