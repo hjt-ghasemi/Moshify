@@ -7,3 +7,5 @@ document
         .classList.toggle("collapsible--expanded")
     )
   );
+
+AOS.init();

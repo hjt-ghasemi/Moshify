@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
   </head>
   <body>
     <!-- navigation bar -->
@@ -38,24 +39,34 @@
     <!-- hero section -->
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="blcok__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__tagline">
-            Deploy your websites in less than 60 seconds.
-          </p>
-          <a href="#" class="btn btn--accent btn--streched">get started</a>
-        </header>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="./images/banner.webp 1x, ./images/banner@2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="./images/banner.png 1x, ./images/banner@2x.png 2x"
-          />
-          <img src="./images/banner.png" class="hero__image" />
-        </picture>
+        <div>
+          <header class="block__header hero__content">
+            <h1 class="blcok__heading" data-aos="zoom-up">
+              Cloud Hosting for Pros
+            </h1>
+            <p class="hero__tagline">
+              Deploy your websites in less than 60 seconds.
+            </p>
+            <a href="#" class="btn btn--accent btn--streched">get started</a>
+          </header>
+        </div>
+        <div>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./images/banner.webp 1x, ./images/banner@2x.webp 2x"
+            />
+            <source
+              type="image/png"
+              srcset="./images/banner.png 1x, ./images/banner@2x.png 2x"
+            />
+            <img
+              src="./images/banner.png"
+              class="hero__image"
+              data-aos="fade-up"
+            />
+          </picture>
+        </div>
       </div>
     </section>
     <!-- end of hero section -->
@@ -95,7 +106,7 @@
     <!-- end of domain block section -->
     <!-- plans block section -->
     <section class="block plans">
-      <div class="container grid grid--1x3">
+      <div class="container grid grid--1x3" data-aos="fade-up">
         <div class="plan">
           <div class="card card--secondary">
             <div class="card__header">
@@ -168,7 +179,7 @@
           odio!
         </p>
       </header>
-      <article class="feature grid grid--1x2">
+      <article class="feature grid grid--1x2" data-aos="zoom-in-up">
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -199,7 +210,7 @@
           />
         </picture>
       </article>
-      <article class="feature grid grid--1x2">
+      <article class="feature grid grid--1x2" data-aos="zoom-in-up">
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -230,7 +241,7 @@
           />
         </picture>
       </article>
-      <article class="feature grid grid--1x2">
+      <article class="feature grid grid--1x2" data-aos="zoom-in-up">
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -261,7 +272,7 @@
           />
         </picture>
       </article>
-      <article class="feature grid grid--1x2">
+      <article class="feature grid grid--1x2" data-aos="zoom-in-up">
         <div class="feature__content">
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -313,10 +324,11 @@
             class="block-showcase__image"
             src="./images/ipad.png"
             alt="an image of an ipad"
+            data-aos="slide-right"
           />
         </picture>
         <ul class="list">
-          <li>
+          <li data-aos="fade">
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
@@ -333,7 +345,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="fade">
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
@@ -350,7 +362,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="fade">
             <div class="media">
               <div class="media__image">
                 <svg class="icon icon--primary">
@@ -491,6 +503,7 @@
       </div>
     </footer>
     <!-- end of footer block -->
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
