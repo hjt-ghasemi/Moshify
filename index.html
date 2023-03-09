@@ -18,10 +18,21 @@
     <meta property="og:image" content="http://moshified.com/moshify.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=optional"
       rel="stylesheet"
+    /> -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=optional"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=optional"
+    /></noscript>
     <!-- <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/aos.css" /> -->
@@ -65,16 +76,18 @@
           <picture>
             <source
               type="image/webp"
-              srcset="./images/banner.webp 1x, ./images/banner@2x.webp 2x"
+              srcset="./images/banner.webp 570w, ./images/banner@2x.webp 1140w"
             />
             <source
               type="image/png"
-              srcset="./images/banner.png 1x, ./images/banner@2x.png 2x"
+              srcset="./images/banner.png 570w, ./images/banner@2x.png 1140w"
             />
             <img
               src="./images/banner.png"
               class="hero__image"
               data-aos="fade-up"
+              role="presentation"
+              alt=""
             />
           </picture>
         </div>
@@ -208,11 +221,11 @@
         <picture>
           <source
             type="image/webp"
-            srcset="./images/easy.webp 1x, ./images/easy@2x.webp 2x"
+            srcset="./images/easy.webp 570w, ./images/easy@2x.webp 1140w"
           />
           <source
             type="image/jpg"
-            srcset="./images/easy.jpg 1x, ./images/easy@2x.jpg 2x"
+            srcset="./images/easy.jpg 570w, ./images/easy@2x.jpg 1140w"
           />
           <img
             src="./images/easy@2x.jpg"
@@ -325,11 +338,11 @@
         <picture class="block-showcase__image__container">
           <source
             type="image/webp"
-            srcset="./images/ipad.webp 1x, ./images/ipad@2x.webp 2x"
+            srcset="./images/ipad.webp 700w, ./images/ipad@2x.webp 1400w"
           />
           <source
             type="image/png"
-            srcset="./images/ipad.png 1x, ./images/ipad@2x.png 2x"
+            srcset="./images/ipad.png 700w, ./images/ipad@2x.png 1400w"
           />
           <img
             class="block-showcase__image"
